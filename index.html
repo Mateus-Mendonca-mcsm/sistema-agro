@@ -9,19 +9,21 @@
 </head>
 <body>
 
-    <div class="wrapper"> 
-        <form action="" >
-            <h1>Login</h1>
-            <div class="imput-box">
-                <input type="text" placeholder="Usuário" required>
-            <div class="imput-box">
-                <input type="password" placeholder="Senha" required>
-
+    <form>
+        <div class="container">
+            <h1>Bem-vindo</h1>
+            <p>Faça login para continuar.</p>
+            <div class="input-group">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required>
             </div>
+            <div class="input-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
             </div>
-        </form>
-
-    </div>
+            <button type="submit">Entrar</button>
+        </div>
+    </form>
     
 </body>
 </html>
