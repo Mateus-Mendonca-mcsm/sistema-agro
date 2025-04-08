@@ -1,8 +1,8 @@
 # Sistema Agro!
-Sistema em fase de desenvolvimento com inicio dia 07-04-2025!
+** Sistema em fase de desenvolvimento com inicio dia 07-04-2025! **
 Projeto pessoal desenvolvido por mim como trabalho de graduação tendo iniciado a partir do terceiro semestre da faculdade, ainda com raso conhecimento de programação.
 
-# Finalidades 
+## Finalidades 
 Sistema tem por finalidade cadastrar frutíferas com periciodidade de produção e correto periódo para adubação. 
 definir um lembrete com notificação via email para o usuário quando, como e o tipo de adubo usar.
 # Ex:
