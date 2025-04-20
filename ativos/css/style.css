@@ -1,7 +1,7 @@
 body {
     min-width: 100vh; /*Min-width tem a finalidade  de evitar que o conteúdo da página fique muito pequeno em telas menores.*/
 
-    background-image: url(../imgs/plantacao-de-soja.jpg); /* Imagem de fundo da página */
+    background-image: url(../imgs/soja.svg); /* Imagem de fundo da página */
     background-size: 100%; /* Tamanho da imagem de fundo */
     background-repeat: no-repeat; /* Não repetir a imagem de fundo */
 
@@ -137,10 +137,10 @@ input:focus { /* Estilo do campo de entrada em foco */
 button { /* Estilo do botão */
     /* O `button` é um elemento HTML usado para acionar ações (como enviar um formulário). Ele pode ser estilizado para melhorar a aparência e a usabilidade. */
 
-    background-color: #02ffc4; /* Cor de fundo do botão */
+    background-color: #000cff; /* Cor de fundo do botão */
     /* O `background-color: #3902ff` define a cor de fundo do botão como um azul mais escuro. Isso cria um contraste com o fundo branco do formulário e ajuda a destacar o botão. */
 
-    color: #000000; /* Cor do texto do botão */
+    color: #ffffff; /* Cor do texto do botão */
     /* O `color: #fff` define a cor do texto do botão como branco. Isso garante que o texto seja legível e fácil de interagir, especialmente em dispositivos móveis. */
 
     font-weight: bold; /* Peso da fonte do botão */
@@ -156,7 +156,7 @@ button { /* Estilo do botão */
 button:hover { /* Estilo do botão ao passar o mouse */
     /* O `button:hover` aplica estilos ao botão quando o mouse passa sobre ele. Isso ajuda a indicar ao usuário que o botão é interativo e pronto para ser clicado. */
 
-    background-color: #2e02cc; /* Cor de fundo do botão ao passar o mouse */
+    background-color: #03f986; /* Cor de fundo do botão ao passar o mouse */
     /* O `background-color: #2e02cc` muda a cor de fundo do botão para um azul mais escuro quando o mouse passa sobre ele. Isso cria um efeito visual que indica ao usuário que o botão é interativo e pronto para ser clicado. */
 }
 
