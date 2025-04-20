@@ -1,168 +1,74 @@
 body {
     min-width: 100vh; /*Min-width tem a finalidade  de evitar que o conteúdo da página fique muito pequeno em telas menores.*/
-
     background-image: url(../imgs/soja.svg); /* Imagem de fundo da página */
     background-size: 100%; /* Tamanho da imagem de fundo */
     background-repeat: no-repeat; /* Não repetir a imagem de fundo */
-
-    font-family: Arial, sans-serif; /* Fonte padrão da página */
-
-    display: grid; /* Usando grid para centralizar o conteúdo */
-
-    place-items: center; /* Centraliza o conteúdo na tela */
 }
 
-p {
-    font-size: 1.3125rem; /* Tamanho da fonte do parágrafo */
-
-    font-weight: 900; /* Peso da fonte do parágrafo O peso da fonte(`font-weight`) controla a espessura do texto. Ele pode variar de valores numéricos (como `100`, `400`, `700`) a palavras-chave (`normal`, `bold`, etc.). Aqui está uma explicação mais detalhada:
-
-    ### Valores comuns de `font-weight`:
-    - **`100`**: Extra fino (Thin).
-    - **`400`**: Normal (Regular) — padrão para a maioria das fontes.
-    - **`700`**: Negrito (Bold).
-    - **`900`**: Extra negrito (Black).
-    
-    No seu código:
-    
-    ```css
-    p {
-        font-size: 1.3125rem; /* Tamanho da fonte do parágrafo
-        font-weight: 700; /* Peso da fonte do parágrafo
-        color: #222;
-        margin-bottom: 5rem;
-    }
-    ```
-    
-    O `font-weight: 700` está dizendo que o texto dos parágrafos (`<p>`) deve ser exibido em **negrito**. Isso é útil para destacar o texto, tornando-o mais visível ou importante.
-    
-    ### Por que usar valores numéricos?
-    Os valores numéricos oferecem mais controle sobre o peso da fonte, especialmente se você estiver usando uma fonte personalizada que suporta pesos intermediários (como `500` ou `600`). Por exemplo:
-    - `font-weight: 500` é um peso médio (Medium).
-    - `font-weight: 600` é um semi-negrito (Semi-bold).
-    
-    Se você usar palavras-chave como `bold`, elas geralmente correspondem ao valor `700`, enquanto `normal` equivale a `400`.*/
-
-    color: #222;
-    /* Cor do texto do parágrafo */
-
-    margin-bottom: 5rem; /* Espaçamento inferior do parágrafo */
-    /* O `margin-bottom` é uma propriedade CSS que define a margem inferior de um elemento. A margem é o espaço fora da borda de um elemento, e o `margin-bottom` especificamente controla o espaço abaixo do elemento. Isso pode ser útil para criar espaçamento entre elementos em uma página, como entre parágrafos, títulos ou outros blocos de conteúdo. */
+h2 {
+    text-align: center; /* Alinhamento do texto no centro */
+    color: #fff; /* Cor do texto */
+    font-size: 2em; /* Tamanho da fonte */
+    margin-top: 20px; /* Margem superior */
 }
 
-form { /* Estilo do formulário */
-    /* O `form` é um elemento HTML usado para coletar dados do usuário. Ele pode conter vários elementos de entrada, como campos de texto, botões de envio, caixas de seleção, etc. O CSS aplicado ao `form` controla a aparência e o layout do formulário na página. */
-
-    display: flex; /* Usando flexbox para layout do formulário */
-    /* O `display: flex` ativa o modelo de layout flexível, permitindo que os itens dentro do contêiner sejam organizados de maneira mais eficiente e responsiva. */
-
-    flex-direction: column; /* Direção dos itens do formulário */
-    /* O `flex-direction: column` organiza os itens dentro do contêiner flexível em uma coluna, ou seja, um abaixo do outro. Isso é útil para criar formulários verticais, onde os campos de entrada e botões são empilhados verticalmente. */
-
-    align-items: center; /* Alinhamento dos itens do formulário */
-    /* O `align-items: center` centraliza os itens ao longo do eixo transversal (horizontalmente, se a direção for coluna). Isso garante que todos os elementos dentro do formulário estejam alinhados no centro, proporcionando uma aparência mais organizada e simétrica. */
-
-    width: 100%; /* Largura total do formulário */
-    /* O `width: 100%` garante que o formulário ocupe toda a largura disponível do contêiner pai. Isso é útil para garantir que o formulário se ajuste corretamente em diferentes tamanhos de tela. */
-
-    max-width: 28rem; /* Largura máxima do formulário */
-    /* O `max-width: 28rem` define um limite superior para a largura do formulário. Isso significa que, mesmo que o contêiner pai seja maior, o formulário não excederá essa largura, garantindo que ele permaneça legível e fácil de usar em telas maiores. */
-
-    
-
-    padding: 4rem; /* Espaçamento interno do formulário */
-    /* O `padding: 4rem` adiciona espaço interno ao redor do conteúdo do formulário. Isso garante que os elementos dentro do formulário não fiquem colados nas bordas, proporcionando uma aparência mais limpa e organizada. */
-
-    border-radius: 0.5rem; /* Bordas arredondadas do formulário */
-    /* O `border-radius: 0.5rem` aplica bordas arredondadas ao formulário, suavizando os cantos e dando uma aparência mais moderna e amigável. Isso é especialmente útil em designs responsivos, onde formas mais suaves podem melhorar a experiência do usuário. */
-
-    box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.15); /* Sombra do formulário */
-    /* O `box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.15)` adiciona uma sombra ao redor do formulário, criando um efeito de profundidade. Isso ajuda a destacar o formulário em relação ao fundo e pode melhorar a legibilidade, especialmente em designs com muito contraste. */
-    
+form {
+    display: flex; /* Exibe os elementos filhos em linha */
+    flex-direction: column; /* Direção da coluna */
+    align-items: center; /* Alinhamento dos itens no centro */
+    margin-top: 20px; /* Margem superior */
 }
 
-label { /* Estilo dos rótulos do formulário */
-    /* O `label` é um elemento HTML usado para descrever um campo de entrada. Ele melhora a acessibilidade e a usabilidade, permitindo que os usuários saibam o que devem inserir em cada campo. */
-
-    width: 100%; /* Largura total do rótulo */
-    /* O `width: 100%` garante que o rótulo ocupe toda a largura disponível do contêiner pai. Isso é útil para garantir que o rótulo esteja alinhado corretamente com o campo de entrada correspondente. */
-
-    color: #03dcfd; /* Cor do texto do rótulo */
-    /* O `color: #777` define a cor do texto do rótulo como um cinza claro. Isso cria um contraste suave com o fundo branco do formulário, tornando o rótulo legível sem ser muito chamativo. */
-
-    align-self: flex-start; /* Alinhamento do rótulo */
-    /* O `align-self: flex-start` alinha o rótulo no início do contêiner flexível, garantindo que ele fique posicionado corretamente em relação ao campo de entrada. Isso é útil para manter uma aparência organizada e consistente em todo o formulário. */
-
-    transition: 0.15s linear; /* Transição suave para o rótulo */
-    /* O `transition: 0.15s linear` aplica uma transição suave ao rótulo quando suas propriedades mudam (como cor ou tamanho). Isso melhora a experiência do usuário, tornando as interações mais agradáveis e fluidas. */
-}
-input, button { /* Estilo dos campos de entrada e botões */
-    /* O `input` é um elemento HTML usado para coletar dados do usuário, enquanto o `button` é um elemento usado para acionar ações (como enviar um formulário). Ambos podem ser estilizados para melhorar a aparência e a usabilidade. */
-
-    width: 100%; /* Largura total dos campos de entrada e botões */
-    /* O `width: 100%` garante que os campos de entrada e botões ocupem toda a largura disponível do contêiner pai. Isso é útil para garantir que eles se ajustem corretamente em diferentes tamanhos de tela. */
-
-    padding: 0.75rem 1rem; /* Espaçamento interno dos campos de entrada e botões */
-    /* O `padding: 0.75rem 1rem` adiciona espaço interno ao redor do conteúdo dos campos de entrada e botões. Isso garante que o texto não fique colado nas bordas, proporcionando uma aparência mais limpa e organizada. */
-
-    margin-top: 1rem; /* Espaçamento superior dos campos de entrada e botões */
-    /* O `margin-top: 1rem` adiciona espaço acima dos campos de entrada e botões, garantindo que eles não fiquem colados uns aos outros ou ao rótulo. Isso melhora a legibilidade e a usabilidade do formulário. */
-
-    border: 1px solid #ccc; /* Borda dos campos de entrada e botões */
-    /* O `border: 1px solid #ccc` define uma borda sólida de 1 pixel ao redor dos campos de entrada e botões. A cor da borda é um cinza claro, o que cria um contraste suave com o fundo branco do formulário. Isso ajuda a definir claramente os limites dos elementos. */
-
-    border-radius: 0.25rem; /* Bordas arredondadas dos campos de entrada e botões */
-    /* O `border-radius: 0.25rem` aplica bordas arredondadas aos campos de entrada e botões, suavizando os cantos e dando uma aparência mais moderna e amigável. Isso é especialmente útil em designs responsivos, onde formas mais suaves podem melhorar a experiência do usuário. */
-
-    font-size: 1rem; /* Tamanho da fonte dos campos de entrada e botões */
-    /* O `font-size: 1rem` define o tamanho da fonte dos campos de entrada e botões. Isso garante que o texto seja legível e fácil de interagir, especialmente em dispositivos móveis. */
-
-    transition: 0.2s ease-in-out; /* Transição suave para os campos de entrada e botões */
-    /* O `transition: 0.2s ease-in-out` aplica uma transição suave aos campos de entrada e botões quando suas propriedades mudam (como cor ou sombra). Isso melhora a experiência do usuário, tornando as interações mais agradáveis e fluidas. */
+input[type="text"] {
+    width: 300px; /* Largura do campo de texto */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Margem inferior */
+    border-radius: 20px; /* Bordas arredondadas */
+    border: 2px solid #000cff; /* Borda cinza clara */
+    background-image: url(../imgs/icone-usuario.png); /* Ícone de usuário */
+    background-size: 20px 20px; /* Tamanho do ícone */
+    background-position: 10px 10px; /* Posição do ícone */
+  background-repeat: no-repeat;
+  padding-left: 40px; /* Espaçamento interno à esquerda */
 }
 
-input:focus { /* Estilo do campo de entrada em foco */
-    /* O `input:focus` aplica estilos ao campo de entrada quando ele está em foco (ou seja, quando o usuário clica ou navega até ele). Isso ajuda a indicar ao usuário qual campo está ativo e pronto para interação. */
-
-    border-color: #3902ff; /* Cor da borda do campo de entrada em foco */
-    /* O `border-color: #3902ff` muda a cor da borda do campo de entrada para um azul mais escuro quando ele está em foco. Isso cria um contraste com o fundo branco do formulário e ajuda a destacar o campo ativo. */
-
-    outline: none; /* Remove o contorno padrão do campo de entrada em foco */
-    /* O `outline: none` remove o contorno padrão que alguns navegadores aplicam aos campos de entrada quando eles estão em foco. Isso é útil para personalizar a aparência do campo e garantir que ele se encaixe no design geral do formulário. */
-
-    box-shadow: 0 0 0.25rem rgba(57, 2, 255, 0.5); /* Sombra do campo de entrada em foco */
-    /* O `box-shadow: 0 0 0.25rem rgba(57, 2, 255, 0.5)` adiciona uma sombra ao redor do campo de entrada quando ele está em foco, criando um efeito de destaque. Isso ajuda a indicar ao usuário que o campo está ativo e pronto para interação. */
+input[type="password"] {
+    width: 300px; /* Largura do campo de senha */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Margem inferior */
+    border-radius: 20px; /* Bordas arredondadas */
+    border: 2px solid #000cff; /* Borda cinza clara */
+    background-image: url(../imgs/icone-senha.png); /* Ícone de senha */
+    background-size: 20px 20px; /* Tamanho do ícone */
+    background-position: 10px 10px; /* Posição do ícone */
+  background-repeat: no-repeat;
+  padding-left: 40px; /* Espaçamento interno à esquerda */
 }
 
-button { /* Estilo do botão */
-    /* O `button` é um elemento HTML usado para acionar ações (como enviar um formulário). Ele pode ser estilizado para melhorar a aparência e a usabilidade. */
-
-    background-color: #000cff; /* Cor de fundo do botão */
-    /* O `background-color: #3902ff` define a cor de fundo do botão como um azul mais escuro. Isso cria um contraste com o fundo branco do formulário e ajuda a destacar o botão. */
-
-    color: #ffffff; /* Cor do texto do botão */
-    /* O `color: #fff` define a cor do texto do botão como branco. Isso garante que o texto seja legível e fácil de interagir, especialmente em dispositivos móveis. */
-
-    font-weight: bold; /* Peso da fonte do botão */
-    /* O `font-weight: bold` aplica um peso de fonte negrito ao texto do botão, tornando-o mais visível e destacando sua importância. Isso é útil para chamar a atenção do usuário para ações importantes. */
-
-    cursor: pointer; /* Cursor do mouse ao passar sobre o botão */
-    /* O `cursor: pointer` altera o cursor do mouse para uma mão quando o usuário passa sobre o botão. Isso indica que o botão é clicável e melhora a usabilidade, tornando a interação mais intuitiva. */
-
-    border: none; /* Remove a borda padrão do botão */
-    /* O `border: none` remove a borda padrão que alguns navegadores aplicam aos botões. Isso é útil para personalizar a aparência do botão e garantir que ele se encaixe no design geral do formulário. */
+button[type="submit"] {
+    width: 150px; /* Largura do botão */
+    padding: 10px; /* Espaçamento interno */
+    margin-top: 50px; /* Margem superior */
+    border-radius: 20px; /* Bordas arredondadas */
+    border: none; /* Sem borda */
+    background-color: #000cff; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    font-size: 1.2em; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
 }
 
-button:hover { /* Estilo do botão ao passar o mouse */
-    /* O `button:hover` aplica estilos ao botão quando o mouse passa sobre ele. Isso ajuda a indicar ao usuário que o botão é interativo e pronto para ser clicado. */
-
-    background-color: #03f986; /* Cor de fundo do botão ao passar o mouse */
-    /* O `background-color: #2e02cc` muda a cor de fundo do botão para um azul mais escuro quando o mouse passa sobre ele. Isso cria um efeito visual que indica ao usuário que o botão é interativo e pronto para ser clicado. */
+button[type="submit"]:hover {
+    background-color: #1ce66c; /* Cor de fundo azul mais escuro ao passar o mouse */
 }
 
-button:active { /* Estilo do botão ao ser clicado */
-    /* O `button:active` aplica estilos ao botão quando ele está sendo clicado (ou seja, quando o usuário pressiona o botão do mouse). Isso ajuda a indicar ao usuário que a ação foi registrada e que o botão está ativo. */
-
-    background-color: #1f0199; /* Cor de fundo do botão ao ser clicado */
-    /* O `background-color: #1f0199` muda a cor de fundo do botão para um azul ainda mais escuro quando ele está sendo clicado. Isso cria um efeito visual que indica ao usuário que a ação foi registrada e que o botão está ativo. */
+.form-container {
+    background-color: rgb(28, 230, 108, 0.15); /* Fundo branco com transparência */
+    padding: 30px; /* Espaçamento interno */
+    border: 2px solid #9d9d9f; /* Borda azul */
+    border-radius: 20px; /* Bordas arredondadas */
+    backdrop-filter: blur(8px); /* Efeito vidro */
+    -webkit-backdrop-filter: blur(8px); /* Suporte para Safari */
+    width: fit-content; /* Largura do conteúdo */
+    margin: 60px auto; /* Centraliza na tela */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
 }
