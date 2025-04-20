@@ -1,7 +1,9 @@
 body {
     min-width: 100vh; /*Min-width tem a finalidade  de evitar que o conteúdo da página fique muito pequeno em telas menores.*/
 
-    background-color: #3902ff;/* Cor de fundo da página */
+    background-image: url(../imgs/plantacao-de-soja.jpg); /* Imagem de fundo da página */
+    background-size: 100%; /* Tamanho da imagem de fundo */
+    background-repeat: no-repeat; /* Não repetir a imagem de fundo */
 
     font-family: Arial, sans-serif; /* Fonte padrão da página */
 
@@ -66,8 +68,7 @@ form { /* Estilo do formulário */
     max-width: 28rem; /* Largura máxima do formulário */
     /* O `max-width: 28rem` define um limite superior para a largura do formulário. Isso significa que, mesmo que o contêiner pai seja maior, o formulário não excederá essa largura, garantindo que ele permaneça legível e fácil de usar em telas maiores. */
 
-    background: #fff; /* Cor de fundo do formulário */
-    /* O `background: #fff` define a cor de fundo do formulário como branca. Isso cria um contraste com o fundo azul da página, tornando o formulário mais visível e fácil de ler. */
+    
 
     padding: 4rem; /* Espaçamento interno do formulário */
     /* O `padding: 4rem` adiciona espaço interno ao redor do conteúdo do formulário. Isso garante que os elementos dentro do formulário não fiquem colados nas bordas, proporcionando uma aparência mais limpa e organizada. */
@@ -77,6 +78,7 @@ form { /* Estilo do formulário */
 
     box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.15); /* Sombra do formulário */
     /* O `box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.15)` adiciona uma sombra ao redor do formulário, criando um efeito de profundidade. Isso ajuda a destacar o formulário em relação ao fundo e pode melhorar a legibilidade, especialmente em designs com muito contraste. */
+    
 }
 
 label { /* Estilo dos rótulos do formulário */
@@ -85,7 +87,7 @@ label { /* Estilo dos rótulos do formulário */
     width: 100%; /* Largura total do rótulo */
     /* O `width: 100%` garante que o rótulo ocupe toda a largura disponível do contêiner pai. Isso é útil para garantir que o rótulo esteja alinhado corretamente com o campo de entrada correspondente. */
 
-    color: #777; /* Cor do texto do rótulo */
+    color: #03dcfd; /* Cor do texto do rótulo */
     /* O `color: #777` define a cor do texto do rótulo como um cinza claro. Isso cria um contraste suave com o fundo branco do formulário, tornando o rótulo legível sem ser muito chamativo. */
 
     align-self: flex-start; /* Alinhamento do rótulo */
@@ -135,10 +137,10 @@ input:focus { /* Estilo do campo de entrada em foco */
 button { /* Estilo do botão */
     /* O `button` é um elemento HTML usado para acionar ações (como enviar um formulário). Ele pode ser estilizado para melhorar a aparência e a usabilidade. */
 
-    background-color: #3902ff; /* Cor de fundo do botão */
+    background-color: #02ffc4; /* Cor de fundo do botão */
     /* O `background-color: #3902ff` define a cor de fundo do botão como um azul mais escuro. Isso cria um contraste com o fundo branco do formulário e ajuda a destacar o botão. */
 
-    color: #fff; /* Cor do texto do botão */
+    color: #000000; /* Cor do texto do botão */
     /* O `color: #fff` define a cor do texto do botão como branco. Isso garante que o texto seja legível e fácil de interagir, especialmente em dispositivos móveis. */
 
     font-weight: bold; /* Peso da fonte do botão */
