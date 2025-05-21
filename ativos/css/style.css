@@ -3,6 +3,7 @@ body {
     background-image: url(../imgs/soja.svg); /* Imagem de fundo da página */
     background-size: 100%; /* Tamanho da imagem de fundo */
     background-repeat: no-repeat; /* Não repetir a imagem de fundo */
+    
 }
 
 h2 {
@@ -61,7 +62,7 @@ button[type="submit"]:hover {
     background-color: #1ce66c; /* Cor de fundo azul mais escuro ao passar o mouse */
 }
 
-.form-container {
+main {
     background-color: rgb(28, 230, 108, 0.15); /* Fundo branco com transparência */
     padding: 30px; /* Espaçamento interno */
     border: 2px solid #9d9d9f; /* Borda azul */
