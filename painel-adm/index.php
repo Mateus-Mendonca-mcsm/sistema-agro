@@ -45,7 +45,7 @@
 									<?php echo @$nome_usuario; ?>
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalPerfil">Editar Dados</a></li>
+									<li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalPerfil">Editar perfil</a></li>
 
 									<li><hr class="dropdown-divider"></li>
 									<li><a class="dropdown-item" href="../logout.php">Sair</a></li>
